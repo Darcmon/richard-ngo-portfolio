@@ -18,7 +18,7 @@ function classNames(...classes: any) {
 const Navbar = (props: Props) => {
   return (
     <nav className="p-10 bg-slate-500 flex items-center justify-between">
-      <CpuChipIcon className="w-12"/>
+      <CpuChipIcon className="w-12" />
       <div className="hidden sm:ml-6 sm:block">
         <div className="flex space-x-4">
           {navigation.map((item) => (
@@ -29,7 +29,7 @@ const Navbar = (props: Props) => {
                 item.current
                   ? "bg-sky-400 text-black"
                   : "text-gray-300 hover:bg-sky-200 hover:text-white",
-                "rounded-md px-3 py-2 text-sm font-medium"
+                "rounded-md px-3 py-2 text-sm font-medium",
               )}
               aria-current={item.current ? "page" : undefined}
             >
