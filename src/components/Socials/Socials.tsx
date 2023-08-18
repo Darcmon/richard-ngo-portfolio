@@ -23,7 +23,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 
 const Socials = () => {
   return (
-    <div className="flex center py-10 gap-8 justify-center">
+    <div className="flex flex-wrap center py-10 gap-8 justify-center">
       <a
         href="https://www.instagram.com/richyngo/"
         target="_blank"
