@@ -1,20 +1,46 @@
-import React from "react";
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 
-type Props = {};
+// const socials = [
+//   {
+//     name: 'Instagram',
+//     href: `https://www.instagram.com/richyngo/`,
+//     target: '_blank',
+//     alt: 'instagram',
+//   },
+//   {
+//     name: 'LinkedIn',
+//     href: 'https://www.linkedin.com/in/richardngo-/',
+//     target: '_blank',
+//     alt: 'linkedin',
+//   },
+//   {
+//     name: 'GitHub',
+//     href: 'https://github.com/Darcmon',
+//     target: '_blank',
+//     alt: 'github',
+//   },
+// ];
 
-const socials = [
-  { name: "Instagram", href: "#", alt: "instagram" },
-  { name: "LinkedIn", href: "#", alt: "linkedin" },
-  { name: "GitHub", href: "#", alt: "github" },
-];
-
-const Socials = (props: Props) => {
+const Socials = () => {
   return (
-    <div className="flex center">
-      <AiFillInstagram />
-      <AiFillLinkedin />
-      <AiFillGithub />
+    <div className="flex center py-10 gap-8 justify-center">
+      <a
+        href="https://www.instagram.com/richyngo/"
+        target="_blank"
+        aria-label="instagram"
+      >
+        <AiFillInstagram className="h-12 w-12" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/richardngo-/"
+        target="_blank"
+        aria-label="linkedin"
+      >
+        <AiFillLinkedin className="h-12 w-12" />
+      </a>
+      <a href="https://github.com/Darcmon" target="_blank" aria-label="github">
+        <AiFillGithub className="h-12 w-12" />
+      </a>
     </div>
   );
 };

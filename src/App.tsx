@@ -1,16 +1,14 @@
-import { useState } from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
-import Socials from "./components/Socials/Socials";
-import Footer from "./components/Footer/Footer";
-import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
-import "./App.css";
+import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
+import './App.css';
 
 function App() {
   return (
     <>
-      <section className="min-h-screen">
+      <section className="min-h-screen sm::bg-green-900">
         <Navbar />
         <Header />
         <Skills />
