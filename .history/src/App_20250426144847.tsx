@@ -56,15 +56,15 @@ function App() {
         {/* Grid container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {/* Header taking more space initially */}
-          <div className="bento-tile md:col-span-2 lg:col-span-4">
+          <div className="md:col-span-2 lg:col-span-4 p-6 rounded-lg border border-[color:var(--tile-border)] bg-[color:var(--tile-bg)] shadow-md transition-transform duration-200 ease-in-out hover:scale-[1.02]">
             <Header />
           </div>
           {/* Skills (takes 1 column on lg screens) */}
-          <div className="bento-tile lg:col-span-1">
+          <div className="lg:col-span-1 p-6 rounded-lg border border-[color:var(--tile-border)] bg-[color:var(--tile-bg)] shadow-md transition-transform duration-200 ease-in-out hover:scale-[1.02]">
             <Skills />
           </div>
           {/* Projects (takes 3 columns on lg screens) */}
-          <div className="bento-tile md:col-span-2 lg:col-span-3">
+          <div className="md:col-span-2 lg:col-span-3 p-6 rounded-lg border border-[color:var(--tile-border)] bg-[color:var(--tile-bg)] shadow-md transition-transform duration-200 ease-in-out hover:scale-[1.02]">
             <Projects />
           </div>
           {/* Add more tiles here as needed */}
