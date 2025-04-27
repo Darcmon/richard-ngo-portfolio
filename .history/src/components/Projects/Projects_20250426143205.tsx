@@ -1,3 +1,5 @@
+// type Props = {};
+
 const Projects = () => {
   return <div>Projects</div>;
 };

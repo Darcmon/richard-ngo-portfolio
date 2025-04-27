@@ -3,8 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects';
-import AboutMe from './components/AboutMe/AboutMe';
-import TechStack from './components/TechStack/TechStack';
+import Skills from './components/Skills/Skills';
 import DraggableTile from './components/DraggableTile/DraggableTile';
 import './App.css';
 
@@ -32,20 +31,20 @@ interface TileItem {
   className: string; // Store responsive classes here
 }
 
-// Updated initial tiles configuration
+// Initial order and configuration of tiles
 const initialTiles: TileItem[] = [
   {
     id: 'header',
     component: <Header />,
     className: 'md:col-span-2 lg:col-span-4',
   },
-  { id: 'about', component: <AboutMe />, className: 'lg:col-span-2' }, // New AboutMe tile
-  { id: 'tech', component: <TechStack />, className: 'lg:col-span-2' }, // New TechStack tile
+  { id: 'skills', component: <Skills />, className: 'lg:col-span-1' },
   {
     id: 'projects',
     component: <Projects />,
-    className: 'md:col-span-2 lg:col-span-4',
-  }, // Projects on next row
+    className: 'md:col-span-2 lg:col-span-3',
+  },
+  // Add more tiles here with unique IDs if needed
 ];
 
 function App() {
